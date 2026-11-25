@@ -3,6 +3,26 @@
   "description": "Estúdio para criar, personalizar e exportar QR Codes vetoriais (URL, texto, Wi-Fi, Pix, WhatsApp, e-mail e vCard) direto no navegador.",
   "private": true,
   "version": "1.0.0",
+  "license": "MIT",
+  "author": "Fábio de Souza Figueredo",
+  "homepage": "https://fabiofigueredo.github.io/QrCodo/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiofigueredo/QrCodo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiofigueredo/QrCodo/issues"
+  },
+  "keywords": [
+    "qrcode",
+    "qr-code",
+    "svg",
+    "pix",
+    "vcard",
+    "wifi",
+    "react",
+    "vite"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
