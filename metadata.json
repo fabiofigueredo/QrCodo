@@ -2,7 +2,5 @@
   "name": "QRCodo",
   "description": "Estúdio para criar, personalizar e exportar QR Codes vetoriais para links, Wi-Fi, Pix, WhatsApp e contatos.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "majorCapabilities": []
 }
