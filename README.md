@@ -5,7 +5,9 @@
 
 [🇧🇷 Português](#-português) · [🇺🇸 English](#-english)
 
-![React](https://img.shields.io/badge/React-19-149eca) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6) ![Vite](https://img.shields.io/badge/Vite-8-646cff) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8)
+![React](https://img.shields.io/badge/React-19-149eca) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6) ![Vite](https://img.shields.io/badge/Vite-8-646cff) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8) [![Deploy](https://github.com/fabiofigueredo/QrCodo/actions/workflows/deploy.yml/badge.svg)](https://github.com/fabiofigueredo/QrCodo/actions/workflows/deploy.yml) [![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-green)](LICENSE)
+
+**▶ Acesse / Try it: [fabiofigueredo.github.io/QrCodo](https://fabiofigueredo.github.io/QrCodo/)**
 
 ---
 
@@ -165,7 +167,7 @@ Os arquivos recebem nomes descritivos, por exemplo `qrcode-pix-loja-exemplo-ltda
 
 ```bash
 # 1. Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/fabiofigueredo/QrCodo.git
 cd QrCodo
 
 # 2. Instale as dependências
@@ -195,13 +197,14 @@ Nenhuma variável de ambiente é necessária. Opcionalmente, `DISABLE_HMR=true` 
 O QRCodo é um site estático: basta publicar o conteúdo de `dist/` após `npm run build`.
 
 - **Netlify / Vercel / Cloudflare Pages**: comando de build `npm run build`, diretório de saída `dist`.
-- **GitHub Pages**: publique a pasta `dist`. Se o site ficar em um subcaminho (ex.: `/QrCodo/`), adicione `base: '/QrCodo/'` em `vite.config.ts`.
+- **GitHub Pages** (configuração atual): o workflow `.github/workflows/deploy.yml` roda `npm run check` e publica `dist/` a cada push na `main`, com `BASE_PATH=/QrCodo/`. Site: <https://fabiofigueredo.github.io/QrCodo/>.
 - **Qualquer servidor web** (Nginx, Apache, S3): copie os arquivos de `dist/`.
 
 ### Estrutura do projeto
 
 ```
 QrCodo/
+├── .github/workflows/   # CI (PRs) e deploy no GitHub Pages
 ├── index.html                 # Página base, metadados e fontes
 ├── public/favicon.ico
 ├── src/
@@ -409,7 +412,7 @@ Files get descriptive names, e.g. `qrcode-pix-loja-exemplo-ltda-r-49-90-1024px.p
 
 ```bash
 # 1. Clone the repository
-git clone <repository-url>
+git clone https://github.com/fabiofigueredo/QrCodo.git
 cd QrCodo
 
 # 2. Install dependencies
@@ -439,7 +442,7 @@ No environment variables are required. Optionally, `DISABLE_HMR=true` turns off 
 QRCodo is a static site: run `npm run build` and publish the `dist/` folder.
 
 - **Netlify / Vercel / Cloudflare Pages**: build command `npm run build`, output directory `dist`.
-- **GitHub Pages**: publish `dist`. If served from a sub-path (e.g. `/QrCodo/`), add `base: '/QrCodo/'` to `vite.config.ts`.
+- **GitHub Pages** (current setup): `.github/workflows/deploy.yml` runs `npm run check` and publishes `dist/` on every push to `main`, with `BASE_PATH=/QrCodo/`. Live site: <https://fabiofigueredo.github.io/QrCodo/>.
 - **Any web server** (Nginx, Apache, S3): copy the files from `dist/`.
 
 ### Project structure
@@ -471,3 +474,9 @@ The same SVG is used for the on-screen preview and for exports, so the downloade
 | Wi-Fi won't connect | Check SSID and password (case-sensitive) and the security type |
 | "Copy image" does not work | Some browsers block copying images; use "Baixar PNG" instead |
 | History is not saved | Browser storage is full; delete old items or remove logos |
+
+---
+
+## Licença / License
+
+[MIT](LICENSE) © 2026 Fábio de Souza Figueredo
