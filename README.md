@@ -37,8 +37,11 @@ O **QRCodo** é um estúdio para criar, personalizar e exportar QR Codes para li
 
 O código é desenhado em **SVG vetorial**, então pode ser ampliado para qualquer tamanho (de cartão de visita a banner) sem perder qualidade.
 
+**Os QR Codes gerados não expiram.** O conteúdo (link, rede Wi-Fi, Pix, contato etc.) é gravado diretamente no código, sem passar por um servidor de redirecionamento ou por assinatura. O código continua funcionando para sempre; ele só deixa de levar a algum lugar se o próprio destino mudar (por exemplo, se o site sair do ar, a senha do Wi-Fi for trocada ou a chave Pix for excluída).
+
 ### Funcionalidades
 
+- **QR Codes que não expiram**: conteúdo estático gravado no próprio código, sem redirecionamento, sem assinatura e sem prazo de validade.
 - **7 tipos de conteúdo**: URL, texto livre, Wi-Fi, Pix (BR Code estático), WhatsApp, e-mail e contato (vCard).
 - **Visualização ao vivo**: o QR Code é atualizado enquanto você digita, com validação e mensagens de erro claras.
 - **Personalização visual**: 6 paletas prontas, cores livres (com botão de inverter), 4 formatos de módulo (quadrado, suave, pontos, diamante) e 3 estilos de cantos (quadrado, arredondado, circular).
@@ -280,10 +283,13 @@ QrCodo/
 
 Codes are drawn as **vector SVG**, so they scale to any size (from business cards to banners) without losing quality.
 
+**QR codes never expire.** The content (link, Wi-Fi network, Pix, contact, etc.) is encoded directly into the code, with no redirect server or subscription in between. The code keeps working forever; it only stops leading somewhere if the destination itself changes (e.g. the website goes offline, the Wi-Fi password changes, or the Pix key is deleted).
+
 > The interface is in Brazilian Portuguese. The tables below include the on-screen labels in parentheses.
 
 ### Features
 
+- **QR codes that never expire**: static content encoded in the code itself, with no redirects, no subscription, and no expiration date.
 - **7 content types**: URL, free text, Wi-Fi, Pix (static BR Code), WhatsApp, e-mail, and contact (vCard).
 - **Live preview**: the code updates as you type, with validation and clear error messages.
 - **Visual customization**: 6 preset palettes, free colors (with a swap button), 4 module shapes (square, soft, dots, diamond), and 3 corner ("eye") styles (square, rounded, circular).
